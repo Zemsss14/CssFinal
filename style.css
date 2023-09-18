@@ -121,7 +121,7 @@ img.perfum-img {
     align-self: center;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 500px){
 
     
     div.all{
@@ -160,6 +160,7 @@ img.perfum-img {
         font-size: 2em;
     }
 }
+
 
 @media screen and (min-height: 700px) {
 
