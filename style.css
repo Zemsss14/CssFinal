@@ -163,23 +163,3 @@ img.perfum-img {
         font-size: 2em;
     }
 }
-
-
-
-
-@media screen and (min-height: 900px) and (min-width: 500px){
-
-    div.all{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3%;
-        width: 95%;
-        height: 80%;
-    }
-
-    div.text {
-        display: flex;
-        gap: 20px;
-    }
-}
