@@ -1,0 +1,162 @@
+:root {
+    --primary-green: hsl(158, 36%, 37%);
+    --primary-white : hsl(30, 38%, 92%);
+    --secondary-blue : hsl(212, 21%, 14%);
+    --secondary-grey-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-white);
+    height: 100%;
+}
+
+
+section.pop-up{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.all{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 400px;
+    background-color: var(--White);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.text{
+    grid-column-start: 2;
+    padding-inline: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+}
+
+div.price{
+    display: flex;
+    gap: 10%;
+    justify-content: start;
+}
+
+span.img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
+}
+
+img.perfum-img {
+    height: 100%;
+}
+
+.perfume{
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.fraunces {
+    font-family: Fraunces;
+}
+
+.about-parfum{
+    font-size: 14px;
+}
+
+.blue-txt {
+    color: var(--secondary-blue)
+}
+
+.grey-txt{
+    color: var(--secondary-grey-blue);
+}
+
+.price h1 {
+    color: var(--primary-green);
+}
+
+.price p{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    display: flex;
+    border: none;
+    color: white;
+    background-color: var(--primary-green);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.add-to-cart:hover{
+    background-color: hsl(157, 37%, 15%);
+}
+
+.montserrat {
+    font-family: Montserrat;
+}
+
+.attribution{
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 375px){
+
+    
+    div.all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        width: 95%;
+        height: 93%;
+    }
+
+    div.text {
+        gap: 10px;
+    }
+
+    .perfum-img {
+        display: flex;
+        width: 100%;
+        object-fit:cover;
+        
+    }
+
+    span.img{
+        display: flex;
+        height: 40%;
+        width: 100%;
+        
+    }
+
+    
+    .about-parfum{
+        font-size: 14px;
+    }
+    
+    .title{
+        font-size: 2em;
+    }
+}
