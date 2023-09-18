@@ -160,3 +160,44 @@ img.perfum-img {
         font-size: 2em;
     }
 }
+
+@media screen and (min-height: 700px) {
+
+    div.all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        width: 95%;
+        height: 80%;
+    }
+
+    div.text {
+        display: flex;
+        gap: 20px;
+    }
+
+    .perfum-img {
+        display: flex;
+        width: 100%;
+        object-fit:cover;
+        
+    }
+
+    span.img{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        
+    }
+
+    
+    .about-parfum{
+        font-size: 14px;
+    }
+    
+    .title{
+        font-size: 2em;
+    }
+
+}
