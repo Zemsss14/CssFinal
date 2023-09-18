@@ -53,6 +53,7 @@ div.price{
     display: flex;
     gap: 10%;
     justify-content: start;
+    align-items: center;
 }
 
 span.img {
@@ -88,11 +89,13 @@ img.perfum-img {
 
 .price h1 {
     color: var(--primary-green);
+    font-size: 2em;
 }
 
 .price p{
     text-decoration: line-through;
     font-size: 14px;
+    padding-bottom: 5px;
 }
 
 .add-to-cart {
@@ -121,7 +124,7 @@ img.perfum-img {
     align-self: center;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
 
     
     div.all{
@@ -134,7 +137,7 @@ img.perfum-img {
     }
 
     div.text {
-        gap: 10px;
+        gap: 20px;
     }
 
     .perfum-img {
@@ -162,7 +165,9 @@ img.perfum-img {
 }
 
 
-@media screen and (min-height: 700px) {
+
+
+@media screen and (min-height: 900px) {
 
     div.all{
         display: flex;
@@ -177,28 +182,4 @@ img.perfum-img {
         display: flex;
         gap: 20px;
     }
-
-    .perfum-img {
-        display: flex;
-        width: 100%;
-        object-fit:cover;
-        
-    }
-
-    span.img{
-        display: flex;
-        height: 50%;
-        width: 100%;
-        
-    }
-
-    
-    .about-parfum{
-        font-size: 14px;
-    }
-    
-    .title{
-        font-size: 2em;
-    }
-
 }
